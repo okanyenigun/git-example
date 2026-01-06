@@ -8,3 +8,9 @@ class Greeter:
 
     def greet_formal(self, title: str, last_name: str) -> str:
         return self.greet(f"{title} {last_name}")
+
+    def set_style(self, prefix: str | None = None, suffix: str | None = None) -> None:
+        if prefix is not None:
+            self.prefix = prefix
+        if suffix is not None:
+            self.suffix = suffix
