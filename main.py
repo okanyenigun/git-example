@@ -4,7 +4,7 @@ class Greeter:
         self.suffix = suffix
 
     def greet(self, name: str) -> str:
-        return f"{self.prefix}, {name}{self.suffix}"
+        return f"{self.prefix} — {name}{self.suffix}"
 
     def greet_formal(self, title: str, last_name: str) -> str:
         return self.greet(f"{title} {last_name}")
