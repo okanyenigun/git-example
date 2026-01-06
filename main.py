@@ -19,6 +19,10 @@ class Greeter:
         self.prefix = "Hello"
         self.suffix = "!"
 
+    def excited(self) -> str:
+        self.set_style(suffix="!!!")
+        return self.suffix
+
 
 def demo() -> str:
     g = Greeter()
