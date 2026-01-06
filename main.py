@@ -14,3 +14,9 @@ class Greeter:
             self.prefix = prefix
         if suffix is not None:
             self.suffix = suffix
+
+
+def demo() -> str:
+    g = Greeter()
+    g.set_style(prefix="Hey", suffix="!!!")
+    return g.greet("Rebase")
