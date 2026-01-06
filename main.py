@@ -15,6 +15,10 @@ class Greeter:
         if suffix is not None:
             self.suffix = suffix
 
+    def reset(self) -> None:
+        self.prefix = "Hello"
+        self.suffix = "!"
+
 
 def demo() -> str:
     g = Greeter()
